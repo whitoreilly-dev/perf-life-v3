@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEM Program — Perf Life</title>
+  <meta name="description" content="The JEM Mentor Program honors Merrily's brother Jed through mentorship and practical support for the next generation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .jem-hero { background: #152E5C; } /* slightly deeper blue for JEM */
+    .jem-quote {
+      background: var(--blue-xpale);
+      border-left: 4px solid var(--blue);
+      padding: 2rem 2.5rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-size: 1.2rem;
+      font-style: italic;
+      line-height: 1.65;
+      color: var(--ink);
+      margin: 2.5rem 0;
+    }
+    .jem-quote cite {
+      display: block;
+      margin-top: 1rem;
+      font-style: normal;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--blue);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html">
+        <img class="nav__logo-mark" src="assets/perf-logo-walker.png" alt="">
+        Perf Life
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="coaching.html">Coaching</a></li>
+        <li><a href="jem-program.html">JEM Program</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="book.html" class="nav__cta">Book a Session</a></li>
+      </ul>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__drawer">
+    <a href="coaching.html">Coaching</a>
+    <a href="jem-program.html">JEM Program</a>
+    <a href="resources.html">Resources</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="book.html">Book a Session →</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero hero--page jem-hero">
+    <div class="hero__bg" style="background-image:url('assets/jem-bag.jpg');opacity:0.18;" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <span class="eyebrow hero__eyebrow">The JEM Program</span>
+          <h1 class="hero__title">For Jed.</h1>
+          <p class="hero__lead">A mentorship program rooted in clarity, identity, and practical support for the next generation. Named for Merrily's brother Jed — who embodied exactly what this program aims to give.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JED'S STORY -->
+  <section class="section">
+    <div class="container" style="max-width:780px;">
+      <div class="reveal">
+        <span class="eyebrow">The Story Behind JEM</span>
+        <h2>Who Jed was.</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="media-text reveal" style="grid-template-columns:1fr 2fr;gap:3rem;margin-top:2rem;">
+        <div>
+          <img src="assets/jed-portrait.jpg" alt="Jed — the inspiration for the JEM Program" style="width:100%;border-radius:6px;object-fit:cover;">
+          <p style="font-size:0.8rem;color:var(--ink-2);margin-top:0.75rem;text-align:center;">Jed Mellick</p>
+        </div>
+        <div>
+          <p>JEM stands for Jed Edward Mellick — Merrily's brother, and one of the most genuine, grounded people she's known. Jed had a rare quality: he could meet you exactly where you were, without judgment, and help you see clearly what you already knew.</p>
+          <blockquote class="jem-quote">
+            "He had a way of asking the right question at the right moment — not to redirect you, but to help you hear yourself."
+            <cite>— Merrily Mellick, Founder</cite>
+          </blockquote>
+          <p>The JEM Program was created to honor that quality — and to give the next generation the kind of grounded mentorship that changes a life's trajectory.</p>
+          <p>The JEM bag in the photo above traveled with Merrily as she built this program — a quiet reminder of who she's building it for.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT THE PROGRAM IS -->
+  <section class="section section--stone">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Program</span>
+        <h2>What JEM provides.</h2>
+        <p class="lead">Mentorship built on clarity, identity, and the practical tools to move forward — for young adults at the beginning of building their own lives.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card reveal">
+          <div class="card__icon">🧭</div>
+          <h3>Clarity of Direction</h3>
+          <p>Help young adults identify what they actually want — not what's expected of them. Building self-trust before building a plan.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">🤝</div>
+          <h3>Non-Judgmental Partnership</h3>
+          <p>A space to think out loud, ask real questions, and navigate the complexity of early adulthood without performance pressure.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">🛠</div>
+          <h3>Practical Tools</h3>
+          <p>The Compass Method, Personal Org Chart, and Shoulds Inventory — adapted for the questions and choices of young adult life.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">📍</div>
+          <h3>Identity Anchoring</h3>
+          <p>Help participants understand who they are before the world tells them who to be. Values-first, not résumé-first.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">🌱</div>
+          <h3>Momentum Building</h3>
+          <p>Small wins, consistent check-ins, and a repeatable framework for making deliberate choices as they grow.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card__icon">👣</div>
+          <h3>Walking With, Not Ahead</h3>
+          <p>JEM mentors walk alongside — the same principle at the heart of every Perf Life coaching relationship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section class="section">
+    <div class="container">
+      <div class="media-text reveal">
+        <div class="media-text__image">
+          <img src="assets/jed-storefront.jpg" alt="Jed outside a storefront — one of many life chapters" style="height:420px;object-fit:cover;border-radius:6px;width:100%;">
+        </div>
+        <div class="media-text__content">
+          <span class="eyebrow">Who It's For</span>
+          <h2>Young adults building their foundation.</h2>
+          <div class="divider"></div>
+          <p>The JEM Program is designed for young people — roughly 18 to 30 — who are navigating the questions that define early adulthood:</p>
+          <ul style="display:flex;flex-direction:column;gap:0.6rem;margin:1rem 0;padding-left:1rem;">
+            <li style="color:var(--ink-2);font-size:0.95rem;">What do I actually want — not what am I expected to want?</li>
+            <li style="color:var(--ink-2);font-size:0.95rem;">How do I make big decisions without a roadmap?</li>
+            <li style="color:var(--ink-2);font-size:0.95rem;">What kind of person do I want to be, and how do I start becoming that?</li>
+            <li style="color:var(--ink-2);font-size:0.95rem;">Who should I trust to help me think this through?</li>
+          </ul>
+          <p>Jed would have known exactly what to say to someone asking those questions. JEM is that voice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEREST FORM -->
+  <section class="section section--blue">
+    <div class="container" style="max-width:640px;text-align:center;">
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--blue-pale);opacity:1;">Launching Soon</span>
+        <h2 style="color:var(--white);">Express your interest.</h2>
+        <p style="color:rgba(255,255,255,0.75);margin-bottom:2rem;">The JEM Program is actively being developed. If you're interested for yourself or someone you know, leave your email and you'll be the first to hear when enrollment opens.</p>
+        <form class="newsletter__form" style="justify-content:center;" novalidate>
+          <input type="email" placeholder="your@email.com" aria-label="Email address">
+          <button type="submit" class="btn btn--primary" style="background:var(--white);color:var(--blue);">Notify Me</button>
+        </form>
+        <p style="margin-top:1.25rem;font-size:0.8rem;color:rgba(255,255,255,0.45);">No spam. Just a message when JEM opens.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Perf Life</div>
+          <p class="footer__tagline">One step in front of the other.<br>Let's find your Perf.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Coaching</h4>
+          <ul>
+            <li><a href="coaching.html">All Offerings</a></li>
+            <li><a href="coaching.html#pricing">Pricing</a></li>
+            <li><a href="book.html">Book a Session</a></li>
+            <li><a href="jem-program.html">JEM Program</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Merrily</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="shop.html">Shop SNGL</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="book.html">Book a Session</a></li>
+            <li><a href="mailto:hello@perflife.com">hello@perflife.com</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Perf Life. All rights reserved.</span>
+        <span>Perf Life is coaching, not therapy. <a href="#">Referral Network</a>.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

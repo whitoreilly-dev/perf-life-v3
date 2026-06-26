@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Session — Perf Life</title>
+  <meta name="description" content="Book a complimentary Discovery Session with Merrily Mellick. Bring your real situation — we'll find clarity together.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html">
+        <img class="nav__logo-mark" src="assets/perf-logo-walker.png" alt="">
+        Perf Life
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="coaching.html">Coaching</a></li>
+        <li><a href="jem-program.html">JEM Program</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="book.html" class="nav__cta">Book a Session</a></li>
+      </ul>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__drawer">
+    <a href="coaching.html">Coaching</a>
+    <a href="jem-program.html">JEM Program</a>
+    <a href="resources.html">Resources</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="book.html">Book a Session →</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero hero--page">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <span class="eyebrow hero__eyebrow">Book a Session</span>
+          <h1 class="hero__title">Start here.</h1>
+          <p class="hero__lead">The Discovery Session is complimentary. Bring whatever is most on your mind. We'll sort it together and find your clearest next step — with no obligation to continue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT TO EXPECT -->
+  <section class="section section--stone">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <span class="eyebrow">What to Expect</span>
+        <h2>What happens in a Discovery Session.</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="card card--stone reveal" style="text-align:center;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:700;color:var(--blue);line-height:1;margin-bottom:0.5rem;">45'</div>
+          <h3>The conversation</h3>
+          <p>You bring what's real. Merrily listens — fully, without judgment. No scripts, no formulas.</p>
+        </div>
+        <div class="card card--stone reveal" style="text-align:center;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:700;color:var(--blue);line-height:1;margin-bottom:0.5rem;">🧭</div>
+          <h3>The clarity</h3>
+          <p>By the end, you'll leave with a clearer sense of what you're actually navigating and what the right next step looks like.</p>
+        </div>
+        <div class="card card--stone reveal" style="text-align:center;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:700;color:var(--blue);line-height:1;margin-bottom:0.5rem;">→</div>
+          <h3>The choice</h3>
+          <p>If it feels like the right fit, we talk about continuing. If not, that's completely okay. No pressure — ever.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Schedule</span>
+        <h2>Pick a time that works.</h2>
+        <p class="lead">Sessions are conducted via Zoom. Cal.com handles scheduling — just pick a slot and you'll get a confirmation with everything you need.</p>
+      </div>
+
+      <!-- Cal.com embed — replace 'your-cal-username/discovery-session' with real cal link -->
+      <div class="cal-wrap reveal" id="cal-booking">
+        <div style="min-width:320px;height:700px;" id="my-cal-inline"></div>
+      </div>
+
+      <p style="margin-top:1rem;font-size:0.825rem;color:var(--ink-2);text-align:center;" class="reveal">
+        Prefer email? Reach Merrily directly at <a href="mailto:hello@perflife.com" style="color:var(--blue);">hello@perflife.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--stone">
+    <div class="container" style="max-width:720px;">
+      <div class="section-head reveal">
+        <span class="eyebrow">Questions</span>
+        <h2>Before you book.</h2>
+      </div>
+      <div class="faq reveal">
+        <div class="faq__item">
+          <button class="faq__q">Is the Discovery Session really free? <span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__a">Yes, entirely. The Discovery Session is complimentary — no credit card, no commitment, no pitch at the end. It's a genuine conversation to see if Perf Life coaching is the right fit for you.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">What should I prepare? <span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__a">Nothing formal. Just bring what's most alive for you right now — the decision you're stuck on, the situation that keeps circling back, or even just a vague sense that something needs to shift. Merrily will help you name it.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">How is this different from therapy? <span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__a">Coaching is forward-focused — it's about clarity, decisions, and momentum from where you are now. Therapy is clinically trained and often focuses on past patterns and mental health treatment. Merrily is not a licensed therapist and will refer out when therapy is the right fit.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">What does ongoing coaching look like? <span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__a">Most clients do 1–4 sessions per month, depending on what they're navigating. Sessions are typically 60 minutes via Zoom. Between sessions, clients have access to the Perf Life frameworks and can reach Merrily with quick questions. Cadence is always flexible.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">Can I do Walk &amp; Talk if I'm not nearby? <span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__a">Absolutely — Walk &amp; Talk sessions happen over Zoom, with both Merrily and the client walking separately in their own locations. It's a surprisingly effective way to think through complex situations.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">What's the pricing structure? <span class="faq__icon" aria-hidden="true"></span></button>
+          <div class="faq__a">Single sessions are $60/hour. Monthly packages start at $220 for four sessions. These are introductory rates while Merrily completes her ICF credentialing. <a href="coaching.html#pricing" style="color:var(--blue);">See full pricing →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--blue-pale);opacity:1;">One Step</span>
+        <h2>You don't have to have it figured out.</h2>
+        <p>That's the point. Book the session. Bring what's real. We'll work from there.</p>
+        <a href="#cal-booking" class="btn btn--outline">Book Your Session ↑</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Perf Life</div>
+          <p class="footer__tagline">One step in front of the other.<br>Let's find your Perf.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Coaching</h4>
+          <ul>
+            <li><a href="coaching.html">All Offerings</a></li>
+            <li><a href="coaching.html#pricing">Pricing</a></li>
+            <li><a href="book.html">Book a Session</a></li>
+            <li><a href="jem-program.html">JEM Program</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Merrily</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="shop.html">Shop SNGL</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="book.html">Book a Session</a></li>
+            <li><a href="mailto:hello@perflife.com">hello@perflife.com</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Perf Life. All rights reserved.</span>
+        <span>Perf Life is coaching, not therapy. <a href="#">Referral Network</a>.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cal.com embed script — replace 'your-cal-username' with real username -->
+  <script type="text/javascript">
+    (function (C, A, L) {
+      let p = function (a, ar) { a.q.push(ar); };
+      let d = C.document;
+      C.Cal = C.Cal || function () {
+        let cal = C.Cal;
+        let ar = arguments;
+        if (!cal.loaded) {
+          cal.ns = {};
+          cal.q = cal.q || [];
+          d.head.appendChild(d.createElement('script')).src = A;
+          cal.loaded = true;
+        }
+        if (ar[0] === L) {
+          const api = function () { p(api, arguments); };
+          const namespace = ar[1];
+          api.q = api.q || [];
+          if (typeof namespace === 'string') {
+            cal.ns[namespace] = cal.ns[namespace] || api;
+            p(cal.ns[namespace], ar);
+            p(cal, ['initNamespace', namespace]);
+          } else p(cal, ar);
+          return;
+        }
+        p(cal, ar);
+      };
+    })(window, 'https://app.cal.com/embed/embed.js', 'init');
+    Cal('init', 'discovery-session', { origin: 'https://cal.com' });
+    Cal.ns['discovery-session']('inline', {
+      elementOrSelector: '#my-cal-inline',
+      config: { layout: 'month_view' },
+      calLink: 'your-cal-username/discovery-session'
+    });
+    Cal.ns['discovery-session']('ui', {
+      hideEventTypeDetails: false,
+      layout: 'month_view'
+    });
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
