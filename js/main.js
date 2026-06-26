@@ -16,23 +16,29 @@ if (burger && drawer) {
     const open = drawer.classList.toggle('open');
     burger.setAttribute('aria-expanded', open);
   });
-  // Close on link click
   drawer.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => drawer.classList.remove('open'));
   });
 }
 
-// Reveal on scroll
-const reveals = document.querySelectorAll('.reveal');
+// Staggered reveal on scroll — groups of siblings get cascading delays
 const revealObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
-      e.target.classList.add('visible');
+      const siblings = e.target.parentElement
+        ? Array.from(e.target.parentElement.querySelectorAll(':scope > .reveal:not(.visible)'))
+        : [];
+      const idx = siblings.indexOf(e.target);
+      const delay = Math.max(0, idx) * 80;
+      setTimeout(() => {
+        e.target.classList.add('visible');
+      }, delay);
       revealObs.unobserve(e.target);
     }
   });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-reveals.forEach(el => revealObs.observe(el));
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
 // FAQ accordion
 document.querySelectorAll('.faq__q').forEach(btn => {
@@ -51,7 +57,7 @@ if (nForm) {
     e.preventDefault();
     const input = nForm.querySelector('input');
     const btn = nForm.querySelector('.btn');
-    btn.textContent = 'You\'re in ✓';
+    btn.textContent = "You're in ✓";
     btn.disabled = true;
     input.value = '';
   });

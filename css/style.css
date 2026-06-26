@@ -264,3 +264,121 @@ h4 { font-size: 0.95rem; font-weight: 700; letter-spacing: 0; }
   .reveal { opacity: 1; transform: none; transition: none; }
   * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
+
+/* ═══════════════════════════════════════════
+   V3 ENHANCED INTERACTIONS — Editorial White
+   Character: sharp, minimal, no-nonsense
+   Hover = border change + instant fills, no lift
+   ═══════════════════════════════════════════ */
+
+.hero__walker { animation-fill-mode: both; }
+
+/* Hero (white bg) — sage primary, ink-bordered secondary */
+.hero .btn--primary {
+  background: var(--sage);
+  color: var(--white);
+  border-color: var(--sage);
+}
+.hero .btn--primary:hover {
+  background: var(--sage-mid);
+  border-color: var(--sage-mid);
+  box-shadow: 0 5px 18px rgba(61,107,98,0.3);
+}
+/* Override: .btn--outline has white border — invisible on white hero */
+.hero .btn--outline {
+  color: var(--ink);
+  border-color: rgba(0,0,0,0.25);
+}
+.hero .btn--outline:hover {
+  border-color: var(--ink);
+  background: rgba(0,0,0,0.04);
+}
+.hero .btn--outline-dark {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+.hero .btn--outline-dark:hover {
+  background: var(--ink);
+  color: var(--white);
+}
+
+/* Nav — block fill behind text (editorial newspaper style) */
+.nav__links a {
+  position: relative;
+  padding: 3px 6px;
+  margin: -3px -6px;
+  transition: color 0.18s, background 0.18s;
+}
+.nav__links a:hover {
+  background: var(--sage-xpale);
+  color: var(--sage);
+}
+
+/* Cards — border sharpens to full sage, NO lift (editorial = flat) */
+.card {
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+.card:hover {
+  border-color: var(--sage);
+  box-shadow: 4px 4px 0 var(--sage-pale);
+  transform: none;
+}
+.card:hover .card__icon {
+  background: var(--sage-xpale);
+  border-color: var(--sage);
+  transition: background 0.18s, border-color 0.18s;
+}
+
+/* Buttons — flat fill wipe */
+.btn--primary:hover {
+  box-shadow: 3px 3px 0 rgba(61,107,98,0.25);
+  transform: translateY(-1px);
+}
+.btn--outline-dark {
+  transition: background 0.18s, color 0.18s, border-color 0.18s, box-shadow 0.18s;
+}
+.btn--outline-dark:hover {
+  box-shadow: 3px 3px 0 var(--sage-pale);
+}
+
+/* Framework items — sage stripe appears instantly, text shifts */
+.framework-item {
+  transition: background 0.18s, padding-left 0.18s, border-left-width 0.1s;
+}
+.framework-item:hover {
+  background: var(--sage-xpale);
+  padding-left: 1.5rem;
+}
+.framework-item:hover h4 { color: var(--sage); }
+
+/* Testimonials — sage tint fill */
+.testimonial { transition: background 0.18s, border-left-color 0.18s; }
+.testimonial:hover {
+  background: var(--sage-xpale);
+  border-left-color: var(--sage);
+}
+
+/* Footer links */
+.footer__col a {
+  display: inline-block;
+  transition: color 0.15s, padding-left 0.15s;
+}
+.footer__col a:hover { color: var(--white); padding-left: 5px; }
+
+/* Pricing cards — sage border snap */
+.pricing-card {
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+.pricing-card:hover {
+  border-color: var(--sage);
+  box-shadow: 4px 4px 0 var(--sage-pale);
+}
+
+/* Product cards — same editorial flat-shadow pattern */
+.product-card {
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+.product-card:hover {
+  border-color: var(--sage);
+  box-shadow: 4px 4px 0 var(--sage-pale);
+}
