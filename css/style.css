@@ -10,6 +10,8 @@
   --white:      #FFFFFF;
   --off-white:  #F8F8F6;
   --stone:      #F0F0EC;
+  --icon-sw:    1;
+  --icon-lc:    round;
   --ink:        #111111;
   --ink-2:      #555550;
   --ink-3:      #888882;
@@ -138,7 +140,7 @@ h4 { font-size: 0.95rem; font-weight: 700; letter-spacing: 0; }
 .card--blue h3 { color: var(--white); }
 .card--blue p { color: rgba(255,255,255,0.75); }
 .card--stone { background: var(--stone); border-color: var(--rule); }
-.card__icon { width: 32px; height: 32px; background: var(--sage-xpale); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+.card__icon { width: 48px; height: 48px; background: transparent; border: 1px solid var(--sage-pale); display: flex; align-items: center; justify-content: center; color: var(--sage); flex-shrink: 0; font-size: 0; }
 .card p { color: var(--ink-2); font-size: 0.975rem; }
 .card a { margin-top: auto; font-size: 0.875rem; font-weight: 600; color: var(--sage); display: inline-flex; align-items: center; gap: 0.3rem; }
 .card a:hover { color: var(--sage-mid); }
